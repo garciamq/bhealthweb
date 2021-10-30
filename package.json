@@ -67,12 +67,13 @@
     "@babel/core": "^7.13.14",
     "auto-changelog": "~2.2.1"
   },
+  
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "heroku-prebuild": "echo This runs before Heroku installs dependencies.",
-    "heroku-postbuild": "echo This runs after Heroku installs dependencies, but before Heroku prunes and caches dependencies.",
-    "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies.",
+  "heroku-postbuild": "echo This runs after Heroku installs dependencies, but before Heroku prunes and caches dependencies.",
+  "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies.",
     "dev": "concurrently \"node src/server/server.js\" \"npm start \"",
     "test": "react-scripts test",
     "test:cov": "npm test -- --coverage --watchAll=false",
